@@ -2,6 +2,8 @@
 
 This repo is a [cookiecutter](https://github.com/cookiecutter/cookiecutter) template to quickly bootstrap new Sage apps.
 
+## Usage
+
 First, make sure you've installed cookiecutter:
 
 ```sh
