@@ -1,1 +1,7 @@
+{%- if cookiecutter.base_image == "Waggle AI / ML" -%}
 pywaggle[all]
+{%- elif cookiecutter.base_image == "Waggle Minimal" -%}
+pywaggle
+{%- elif cookiecutter.base_image == "Python 3.11" -%}
+pywaggle
+{% endif %}

@@ -1,15 +1,16 @@
-# select a base image
+{%- if cookiecutter.base_image == "Waggle AI / ML" -%}
+FROM waggle/plugin-base:1.1.1-ml
+{%- elif cookiecutter.base_image == "Waggle Minimal" -%}
 FROM waggle/plugin-base:1.1.1-base
+{%- elif cookiecutter.base_image == "Python 3.11" -%}
+FROM python:3.11
+{%- endif %}
 
-# put all of our apps code in /app
 WORKDIR /app
 
-# install all python dependencies
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# copy rest of our code
 COPY . .
 
-# define how to run our code
 ENTRYPOINT ["python3", "main.py"]

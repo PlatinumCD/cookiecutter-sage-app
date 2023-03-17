@@ -3,5 +3,6 @@
     "repo": "{{ cookiecutter.name.lower() | replace(' ', '_') | replace('-', '_') | replace('.', '_') | trim() }}",
     "description": "My really amazing app!",
     "author": "My name",
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "base_image": ["Waggle AI / ML", "Waggle Minimal", "Python 3.11"]
 }
