@@ -1,8 +1,6 @@
-{%- if cookiecutter.base_image == "Waggle AI / ML" -%}
+{% if cookiecutter.template == "vision" -%}
 FROM waggle/plugin-base:1.1.1-ml
-{%- elif cookiecutter.base_image == "Waggle Minimal" -%}
-FROM waggle/plugin-base:1.1.1-base
-{%- elif cookiecutter.base_image == "Python 3.11" -%}
+{%- elif cookiecutter.template == "minimal" -%}
 FROM python:3.11
 {%- endif %}
 

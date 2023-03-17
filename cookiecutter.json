@@ -4,5 +4,5 @@
     "description": "My really amazing app!",
     "author": "My name",
     "version": "0.1.0",
-    "base_image": ["Waggle AI / ML", "Waggle Minimal", "Python 3.11"]
+    "template": ["vision", "minimal"]
 }
