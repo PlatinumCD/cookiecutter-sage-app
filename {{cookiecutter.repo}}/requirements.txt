@@ -1,6 +1,9 @@
 # for additional pywaggle install options, see: https://github.com/waggle-sensor/pywaggle#installation-guides
 {% if cookiecutter.template == "vision" -%}
-pywaggle[vision]
+pywaggle[vision]==0.55.*
+{% elif cookiecutter.template == "usbserial_sensor" -%}
+pywaggle==0.55.*
+pyserial==3.5.*
 {%- else -%}
-pywaggle
+pywaggle==0.55.*
 {%- endif %}

@@ -1,5 +1,7 @@
 {% if cookiecutter.template == "vision" -%}
 FROM waggle/plugin-base:1.1.1-ml
+{%- elif cookiecutter.template == "usbserial_sensor" -%}
+FROM python:3.11
 {%- elif cookiecutter.template == "minimal" -%}
 FROM python:3.11
 {%- endif %}
