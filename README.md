@@ -14,4 +14,4 @@ Then, run the following:
 cookiecutter gh:waggle-sensor/cookiecutter-sage-app
 ```
 
-This will create a new app with the `repo` name you provide cookiecutter.
+You'll be prompted for a few things and then you'll have a new app directory named with the repo name you provided.
