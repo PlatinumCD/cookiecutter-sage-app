@@ -4,6 +4,8 @@ FROM waggle/plugin-base:1.1.1-ml
 FROM python:3.11
 {%- elif cookiecutter.template == "minimal" -%}
 FROM python:3.11
+{%- elif cookiecutter.template == "tutorial" -%}
+FROM waggle/plugin-base:1.1.1-ml
 {%- endif %}
 
 WORKDIR /app

@@ -4,6 +4,8 @@ pywaggle[vision]==0.55.*
 {% elif cookiecutter.template == "usbserial_sensor" -%}
 pywaggle==0.55.*
 pyserial==3.5.*
-{%- else -%}
+{% elif cookiecutter.template == "minimal" -%}
 pywaggle==0.55.*
+{% elif cookiecutter.template == "tutorial" -%}
+pywaggle[all]==0.55.*
 {%- endif %}

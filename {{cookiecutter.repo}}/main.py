@@ -30,13 +30,31 @@ def main():
     with Plugin() as plugin, Serial("/dev/ttyUSB0", baudrate=9600) as dev:
         while True:
             print("recv", dev.readline())
-{%- else -%}
+{% elif cookiecutter.template == "minimal" -%}
 from waggle.plugin import Plugin
 
 
 def main():
     with Plugin() as plugin:
         print("This is the start of an amazing app!")
+{% elif cookiecutter.template == "tutorial" -%}
+import numpy as np
+import cv2
+
+
+def compute_mean_color(image):
+    return np.mean(image, (0, 1)).astype(float)
+
+
+def main():
+    # read example image from file
+    image = cv2.imread("example.jpg")
+
+    # compute mean color
+    mean_color = compute_mean_color(image)
+
+    # print mean color
+    print(mean_color)
 {%- endif %}
 
 

@@ -4,5 +4,10 @@
     "description": "My really amazing app!",
     "author": "My name",
     "version": "0.1.0",
-    "template": ["vision", "usbserial_sensor", "minimal"]
+    "template": [
+        "vision",
+        "usbserial_sensor",
+        "minimal",
+        "tutorial"
+    ]
 }
