@@ -1,5 +1,4 @@
-# {{ cookiecutter.name }}
-name: "{{ cookiecutter.repo }}"
+name: "{{ cookiecutter.name }}"
 version: "{{ cookiecutter.version }}"
 description: "{{ cookiecutter.description }}"
 keywords: ""

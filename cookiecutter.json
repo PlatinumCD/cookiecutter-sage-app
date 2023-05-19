@@ -1,6 +1,5 @@
 {
-    "name": "My Amazing App",
-    "repo": "{{ cookiecutter.name.lower() | replace(' ', '-') | replace('_', '-') | replace('.', '-') | trim() }}",
+    "name": "",
     "description": "My really amazing app!",
     "author": "My name",
     "version": "0.1.0",
