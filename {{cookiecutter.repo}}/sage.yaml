@@ -1,4 +1,6 @@
-name: "{{ cookiecutter.name }}"
+# {{ cookiecutter.name }}
+name: "{{ cookiecutter.repo }}"
+version: "{{ cookiecutter.version }}"
 description: "{{ cookiecutter.description }}"
 keywords: ""
 authors: "{{ cookiecutter.author }}"
