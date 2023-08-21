@@ -7,7 +7,7 @@ This repo is a [cookiecutter](https://github.com/cookiecutter/cookiecutter) temp
 First, make sure you've installed cookiecutter:
 
 ```sh
-pip3 install cookiecutter
+pip3 install --upgrade cookiecutter
 ```
 
 Then, run the following:
