@@ -3,7 +3,7 @@
     "description": "My really amazing app!",
     "author": "My name",
     "version": "0.1.0",
-    "template": [
+    "kind": [
         "vision",
         "usbserial_sensor",
         "minimal",

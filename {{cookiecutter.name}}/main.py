@@ -1,4 +1,4 @@
-{% if cookiecutter.template == "vision" -%}
+{% if cookiecutter.kind == "vision" -%}
 from waggle.plugin import Plugin
 from waggle.data.vision import Camera
 import numpy as np
@@ -21,7 +21,7 @@ def main():
             plugin.publish("color.mean.r", mean_color[0], timestamp=snapshot.timestamp)
             plugin.publish("color.mean.g", mean_color[1], timestamp=snapshot.timestamp)
             plugin.publish("color.mean.b", mean_color[2], timestamp=snapshot.timestamp)
-{% elif cookiecutter.template == "usbserial_sensor" -%}
+{% elif cookiecutter.kind == "usbserial_sensor" -%}
 from waggle.plugin import Plugin
 from serial import Serial
 
@@ -30,14 +30,14 @@ def main():
     with Plugin() as plugin, Serial("/dev/ttyUSB0", baudrate=9600) as dev:
         while True:
             print("recv", dev.readline())
-{% elif cookiecutter.template == "minimal" -%}
+{% elif cookiecutter.kind == "minimal" -%}
 from waggle.plugin import Plugin
 
 
 def main():
     with Plugin() as plugin:
         print("This is the start of an amazing app!")
-{% elif cookiecutter.template == "tutorial" -%}
+{% elif cookiecutter.kind == "tutorial" -%}
 import numpy as np
 import cv2
 

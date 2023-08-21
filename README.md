@@ -19,11 +19,11 @@ cookiecutter gh:waggle-sensor/cookiecutter-sage-app
 You'll be prompted for a few things like:
 
 ```txt
-name []: my-amazing-app
+name [my-amazing-app]: my-amazing-app
 description [My really amazing app!]:
 author [My name]:
 version [0.1.0]:
-Select template:
+Select kind:
 1 - vision
 2 - usbserial_sensor
 3 - minimal

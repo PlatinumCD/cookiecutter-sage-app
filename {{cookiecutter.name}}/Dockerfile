@@ -1,10 +1,10 @@
-{% if cookiecutter.template == "vision" -%}
+{% if cookiecutter.kind == "vision" -%}
 FROM waggle/plugin-base:1.1.1-ml
-{%- elif cookiecutter.template == "usbserial_sensor" -%}
+{%- elif cookiecutter.kind == "usbserial_sensor" -%}
 FROM python:3.11
-{%- elif cookiecutter.template == "minimal" -%}
+{%- elif cookiecutter.kind == "minimal" -%}
 FROM python:3.11
-{%- elif cookiecutter.template == "tutorial" -%}
+{%- elif cookiecutter.kind == "tutorial" -%}
 FROM waggle/plugin-base:1.1.1-ml
 {%- endif %}
 
