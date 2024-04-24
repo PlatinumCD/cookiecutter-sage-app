@@ -7,7 +7,8 @@ FROM python:3.11
 {%- elif cookiecutter.kind == "tutorial" -%}
 FROM waggle/plugin-base:1.1.1-ml
 {%- elif cookiecutter.kind == "performance" -%}
-FROM python:3.11 # Performance Container w/ binaries
+# Performance Container w/ binaries instead of python:3.11
+FROM python:3.11 
 {%- endif %}
 
 WORKDIR /app
