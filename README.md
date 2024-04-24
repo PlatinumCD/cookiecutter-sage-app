@@ -13,7 +13,7 @@ pip3 install --upgrade cookiecutter
 Then, run the following:
 
 ```sh
-cookiecutter gh:waggle-sensor/cookiecutter-sage-app
+cookiecutter gh:platinumcd/cookiecutter-sage-app
 ```
 
 You'll be prompted for a few things like:
@@ -28,7 +28,8 @@ You'll be prompted for a few things like:
     2 - usbserial_sensor
     3 - minimal
     4 - tutorial
-    Choose from [1/2/3/4] (1): 1
+    5 - performance
+    Choose from [1/2/3/4/5] (1): 1
 ```
 
 After that, you'll have a new app in the directory you provided for `name` with the following files:
