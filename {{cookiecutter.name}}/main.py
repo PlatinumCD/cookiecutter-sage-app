@@ -55,8 +55,32 @@ def main():
 
     # print mean color
     print(mean_color)
+{% elif cookiecutter.kind == "performance" -%}
+import tau
+import numpy as np
+import cv2
+
+
+def compute_mean_color(image):
+    return np.mean(image, (0, 1)).astype(float)
+
+
+def main():
+    # read example image from file
+    image = cv2.imread("example.jpg")
+
+    # compute mean color
+    mean_color = compute_mean_color(image)
+
+    # print mean color
+    print(mean_color)
 {%- endif %}
 
 
+{% if cookiecutter.kind == "performance" -%}
+if __name__ == "__main__":
+    tau.run('main()')
+{% else -%}
 if __name__ == "__main__":
     main()
+{%- endif %}

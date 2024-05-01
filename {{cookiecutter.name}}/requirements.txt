@@ -8,4 +8,6 @@ pyserial==3.5
 pywaggle==0.56.0
 {% elif cookiecutter.kind == "tutorial" -%}
 pywaggle[all]==0.56.0
+{% elif cookiecutter.kind == "performance" -%}
+pywaggle[all]==0.56.0
 {%- endif %}
